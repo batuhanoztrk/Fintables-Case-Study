@@ -1,4 +1,5 @@
 import SubscriptionList from "@components/SubscriptionList";
+import { users } from "@constants/Users";
 import { Status } from "@models/Subscription";
 import { getSubscriptions } from "@services/subscriptions";
 import { useQuery } from "@tanstack/react-query";
@@ -8,13 +9,9 @@ import { useTranslation } from "react-i18next";
 import { Text, View } from "react-native";
 import { ScrollView } from "react-native-virtualized-view";
 
-const user = {
-  id: 3,
-  name: "John Doe",
-  email: "john@doe.com",
-};
-
 const Subscriptions = () => {
+  const user = _.sample(users)!;
+
   const { t } = useTranslation();
 
   const { data, isLoading } = useQuery({

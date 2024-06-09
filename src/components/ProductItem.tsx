@@ -120,7 +120,7 @@ const ProductItem = ({
                 {description}
               </Text>
             </View>
-            <Text className="text-black-primary mr-2 flex-[0.5] text-base font-bold">
+            <Text className="text-black-primary mr-2 flex-[0.4] text-base font-bold">
               ${price}
               <Text className="text-sm font-normal">/{periodString}</Text>
             </Text>
