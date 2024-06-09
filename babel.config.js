@@ -21,6 +21,7 @@ module.exports = function (api) {
             "@store": "./src/store",
             "@root": "./",
             "@app": "./src",
+            "@language": "./src/language",
           },
         },
       ],

@@ -13,7 +13,7 @@ const Splash = () => {
       .then(() => {
         navigation.reset({
           index: 0,
-          routes: [{ name: Screens.Payments }],
+          routes: [{ name: Screens.Subscriptions }],
         });
       })
       .catch((error) => {

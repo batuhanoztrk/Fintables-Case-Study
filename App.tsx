@@ -1,4 +1,5 @@
 import RootStackNavigator from "@app/navigation";
+import "@language/i18n";
 import NavigationService from "@navigation/NavigationService";
 import { NavigationContainer } from "@react-navigation/native";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";

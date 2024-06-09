@@ -1,0 +1,83 @@
+{
+  "version" : "1.2",
+  "profiles" : [ {
+    "id" : "f33088bf-beb7-4120-9660-64fe97b7872d",
+    "name" : "React-i18n",
+    "keyNamingPattern" : "CAMEL_CASE_PATTERN",
+    "sink" : {
+      "id" : "bdee034d-8960-486d-8060-16c7583f205b",
+      "type" : "singleFile",
+      "pathToFile" : "$PROJECT_DIR$/src/language/en.json",
+      "fileType" : "json",
+      "nestingType" : "DOT",
+      "placeholderFormatterName" : "SYMFONY_REPLACEMENT"
+    },
+    "sources" : [ {
+      "id" : "4820b948-5b00-415a-b263-35da70fb0232",
+      "type" : "js",
+      "scopeName" : "Project Files",
+      "scopePattern" : "",
+      "defaultReplacementTemplate" : "t('%namespace%:%key%', %map%)",
+      "recognizedReplacementTemplates" : [ ],
+      "skipDefaultNamespace" : true
+    }, {
+      "id" : "22744487-33bb-49d0-86ad-38e3b623bcf9",
+      "type" : "jsx",
+      "scopeName" : "Project Files",
+      "scopePattern" : "",
+      "defaultReplacementTemplate" : "t('%namespace%:%key%', %map%)",
+      "attributeReplacementTemplate" : "",
+      "inlineTagsReplacementTemplate" : "",
+      "recognizedReplacementTemplates" : [ ],
+      "inlineTagNames" : [ "small", "tt", "big", "sub", "img", "strong", "code", "data", "samp", "wbr", "del", "slot", "sup", "br", "output", "abbr", "a", "b", "acronym", "bdi", "meter", "var", "em", "i", "label", "bdo", "kbd", "dfn", "ins", "ruby", "input", "q", "s", "u", "cite", "progress", "time", "mark", "span" ],
+      "translatableAttributeNames" : [ "alt", "placeholder", "label", "title", "aria-label" ],
+      "skipDefaultNamespace" : true,
+      "inlineTagHandler" : "I18NEXT"
+    } ]
+  }, {
+    "id" : "c3f342ac-cb8d-4fbe-8a20-3b8be24f37e0",
+    "name" : "React-i18n2",
+    "keyNamingPattern" : "CAMEL_CASE_PATTERN",
+    "sink" : {
+      "id" : "012fdbce-118e-48b3-8597-97703e6add8d",
+      "type" : "namespaced",
+      "translationsDirectory" : "$PROJECT_DIR$/src/language",
+      "fileType" : "json",
+      "defaultLocale" : "en",
+      "namespaces" : [ "messages" ],
+      "outputFilenameTemplate" : "%locale%.json",
+      "nestingType" : "DOT",
+      "placeholderFormatterName" : "I18NEXT"
+    },
+    "sources" : [ {
+      "id" : "4c51a3f4-b0ae-4f09-80d0-acd5fec5a716",
+      "type" : "js",
+      "scopeName" : "Project Files",
+      "scopePattern" : "",
+      "defaultReplacementTemplate" : "t('%namespace%:%key%', %map%)",
+      "recognizedReplacementTemplates" : [ ],
+      "skipDefaultNamespace" : true
+    }, {
+      "id" : "d1fe149d-1ad6-48c9-88a2-518fc384df23",
+      "type" : "jsx",
+      "scopeName" : "Project Files",
+      "scopePattern" : "",
+      "defaultReplacementTemplate" : "t('%namespace%:%key%', %map%)",
+      "attributeReplacementTemplate" : "",
+      "inlineTagsReplacementTemplate" : "",
+      "recognizedReplacementTemplates" : [ ],
+      "inlineTagNames" : [ "a", "abbr", "acronym", "b", "bdi", "bdo", "big", "br", "cite", "code", "data", "del", "dfn", "em", "i", "img", "input", "ins", "kbd", "label", "mark", "meter", "output", "progress", "q", "ruby", "s", "samp", "slot", "small", "span", "strong", "sub", "sup", "time", "u", "tt", "var", "wbr" ],
+      "translatableAttributeNames" : [ "title", "alt", "placeholder", "label", "aria-label" ],
+      "skipDefaultNamespace" : true,
+      "inlineTagHandler" : "I18NEXT"
+    } ]
+  } ],
+  "ignores" : {
+    "valuesInProject" : [ "use strict" ],
+    "valuesInFile" : { },
+    "filesInProject" : [ ],
+    "unignoredFunctionNames" : [ ],
+    "unignoredFunctionArguments" : { },
+    "ignoredArrayKeys" : [ "template", "date", "dateFormat", "el", "query", "type", "sql", "layout", "component", "condition", "name", "selector", "id", "class", "key", "middleware" ]
+  }
+}
