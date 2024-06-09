@@ -8,7 +8,12 @@
       "expiredSubscriptions": "Expired Subscriptions",
       "nextBilling": "Next Billing: {{date}}",
       "willExpire": "Will Expire: {{date}}",
-      "expired": "Expired: {{date}}"
+      "expired": "Expired: {{date}}",
+      "cancel": "Cancel",
+      "reactivate": "Reactivate",
+      "renew": "Renew",
+      "giveFeedback": "Give Feedback",
+      "giveUp": "Give Up"
     },
     "period": {
       "monthly": "mo",

@@ -8,7 +8,12 @@
       "expiredSubscriptions": "Süresi Dolmuş Abonelikler",
       "nextBilling": "Sonraki Fatura: {{date}}",
       "willExpire": "Süresi Dolacak: {{date}}",
-      "expired": "Süresi Doldu: {{date}}"
+      "expired": "Süresi Doldu: {{date}}",
+      "cancel": "İptal et",
+      "reactivate": "Yeniden Etkinleştir",
+      "renew": "Yeniden Abone Ol",
+      "giveFeedback": "Geri Bildirim Ver",
+      "giveUp": "Vazgeç"
     },
     "period": {
       "monthly": "ay",

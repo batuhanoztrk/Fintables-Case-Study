@@ -1,4 +1,5 @@
 import RootStackNavigator from "@app/navigation";
+import { ActionSheetProvider } from "@expo/react-native-action-sheet";
 import "@language/i18n";
 import NavigationService from "@navigation/NavigationService";
 import { NavigationContainer } from "@react-navigation/native";
@@ -13,9 +14,11 @@ export default function App() {
   return (
     <>
       <QueryClientProvider client={queryClient}>
-        <NavigationContainer ref={(e) => NavigationService.setNavigator(e)}>
-          <RootStackNavigator />
-        </NavigationContainer>
+        <ActionSheetProvider>
+          <NavigationContainer ref={(e) => NavigationService.setNavigator(e)}>
+            <RootStackNavigator />
+          </NavigationContainer>
+        </ActionSheetProvider>
       </QueryClientProvider>
       <StatusBar style="dark" />
     </>
