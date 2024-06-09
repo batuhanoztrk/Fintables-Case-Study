@@ -10,7 +10,14 @@ const RootStack = createStackNavigator<RootStackParamList>();
 const RootStackNavigator = () => {
   return (
     <RootStack.Navigator initialRouteName={Screens.Splash}>
-      <RootStack.Screen name={Screens.Splash} component={Splash} />
+      <RootStack.Group
+        screenOptions={{
+          headerShown: false,
+        }}
+      >
+        <RootStack.Screen name={Screens.Splash} component={Splash} />
+      </RootStack.Group>
+
       <RootStack.Screen
         name={Screens.Subscriptions}
         component={Subscriptions}
