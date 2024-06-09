@@ -1,3 +1,4 @@
+import NoActiveSubscription from "@components/NoActiveSubscription";
 import SubscriptionList from "@components/SubscriptionList";
 import { Status } from "@models/Subscription";
 import { getSubscriptions } from "@services/subscriptions";
@@ -24,6 +25,10 @@ const Subscriptions = () => {
     return _.filter(data, { status: Status.Expired });
   }, [data]);
 
+  const handleGoToPremium = () => {
+    // Navigate to premium screen
+  };
+
   return (
     <ScrollView className="flex-1 bg-white-light">
       <View className="gap-y-4 p-4">
@@ -44,7 +49,9 @@ const Subscriptions = () => {
             data={activeSubscriptions}
             title={t("subscriptions.activeSubscriptions")}
           />
-        ) : null}
+        ) : (
+          <NoActiveSubscription onGoToPremium={handleGoToPremium} />
+        )}
 
         {isLoading || expiredSubscriptions.length > 0 ? (
           <SubscriptionList

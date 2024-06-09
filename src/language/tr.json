@@ -13,7 +13,9 @@
       "reactivate": "Yeniden Etkinleştir",
       "renew": "Yeniden Abone Ol",
       "giveFeedback": "Geri Bildirim Ver",
-      "giveUp": "Vazgeç"
+      "giveUp": "Vazgeç",
+      "noActiveSubscriptions": "Aktif aboneliğiniz bulunmamaktadır.",
+      "noActiveSubscriptionsContent": "Yeni bir abonelik başlatmak için abonelikler sayfasına gidin."
     },
     "period": {
       "monthly": "ay",

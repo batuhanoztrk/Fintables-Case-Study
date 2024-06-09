@@ -13,7 +13,9 @@
       "reactivate": "Reactivate",
       "renew": "Renew",
       "giveFeedback": "Give Feedback",
-      "giveUp": "Give Up"
+      "giveUp": "Give Up",
+      "noActiveSubscriptions": "You don't have any active subscriptions.",
+      "noActiveSubscriptionsContent": "Go to subscriptions page to start a new subscription."
     },
     "period": {
       "monthly": "mo",
