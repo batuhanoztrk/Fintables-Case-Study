@@ -26,7 +26,7 @@ module.exports = {
           DEFAULT: "#c7002f",
         },
         green: "#24a148",
-        text: {
+        black: {
           primary: "#0a0a0a",
           secondary: "#00000080",
           hint: "#0000004d",

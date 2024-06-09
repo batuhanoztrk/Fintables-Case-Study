@@ -1,4 +1,5 @@
 import { Screens } from "@constants/Screens";
+import i18n from "@language/i18n";
 import { RootStackParamList } from "@navigation/types";
 import { createStackNavigator } from "@react-navigation/stack";
 import Splash from "@screens/splash";
@@ -13,6 +14,10 @@ const RootStackNavigator = () => {
       <RootStack.Screen
         name={Screens.Subscriptions}
         component={Subscriptions}
+        options={{
+          headerTitle: i18n.t("subscriptions.title"),
+          headerTitleAlign: "center",
+        }}
       />
     </RootStack.Navigator>
   );

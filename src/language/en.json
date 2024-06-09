@@ -1,5 +1,9 @@
 {
   "translation": {
-    "subscriptions": "Subscriptions"
+    "subscriptions": {
+      "title": "History of Subscriptions",
+      "welcome": "Hi, {{name}}!",
+      "content": "Today is good day to check all your subscriptions."
+    }
   }
 }
