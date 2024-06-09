@@ -1,25 +1,25 @@
-type Subscription = {
+export type Subscription = {
   product: string;
   platform: Platform;
   status: Status;
-  starts_at: Date;
-  expires_at: Date;
-  canceled_at: Date | null;
+  starts_at: string;
+  expires_at: string;
+  canceled_at?: string | null;
   period: Period;
 };
 
-enum Platform {
+export enum Platform {
   iOS = "ios",
   Android = "android",
   Web = "web",
 }
 
-enum Status {
+export enum Status {
   Active = "active",
   Expired = "expired",
 }
 
-enum Period {
+export enum Period {
   Monthly = "monthly",
   Yearly = "yearly",
 }

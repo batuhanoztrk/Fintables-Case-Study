@@ -3,7 +3,9 @@
     "subscriptions": {
       "title": "History of Subscriptions",
       "welcome": "Hi, {{name}}!",
-      "content": "Today is good day to check all your subscriptions."
+      "content": "Today is good day to check all your subscriptions.",
+      "activeSubscriptions": "Active Subscriptions",
+      "expiredSubscriptions": "Expired Subscriptions"
     }
   }
 }
