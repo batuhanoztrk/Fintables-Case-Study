@@ -1,5 +1,5 @@
 import ProductItem from "@components/ProductItem";
-import { dummySubscriptions } from "@constants/Dummy";
+import { dummySubscription } from "@constants/Dummy";
 import { products } from "@constants/Products";
 import { Subscription } from "@models/Subscription";
 import { FlashList } from "@shopify/flash-list";
@@ -31,7 +31,7 @@ const SubscriptionList = ({
       <View>
         <FlashList
           estimatedItemSize={64}
-          data={isLoading ? new Array(3).fill(dummySubscriptions) : data}
+          data={isLoading ? new Array(3).fill(dummySubscription) : data}
           showsVerticalScrollIndicator={false}
           ItemSeparatorComponent={() => <View className="h-4" />}
           renderItem={({ item, index }) => {

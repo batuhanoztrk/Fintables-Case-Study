@@ -1,6 +1,6 @@
 import { Period, Platform, Status, Subscription } from "@models/Subscription";
 
-const dummySubscriptions: Subscription = {
+const dummySubscription: Subscription = {
   product: "pro",
   platform: Platform.Android,
   status: Status.Active,
@@ -10,4 +10,4 @@ const dummySubscriptions: Subscription = {
   period: Period.Yearly,
 };
 
-export { dummySubscriptions };
+export { dummySubscription };

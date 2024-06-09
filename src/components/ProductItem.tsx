@@ -10,7 +10,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Text, TouchableOpacity, View } from "react-native";
 
-type ProductProps = {
+type ProductItemProps = {
   product: Product;
   subscription: Subscription;
   isLoading?: boolean;
@@ -20,7 +20,7 @@ const ProductItem = ({
   product: { code, name, color, price },
   subscription: { expires_at, canceled_at, period, status },
   isLoading,
-}: ProductProps) => {
+}: ProductItemProps) => {
   const { t, i18n } = useTranslation();
 
   const currentLanguage = i18n.language;
