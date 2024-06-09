@@ -3,8 +3,8 @@ import { Text, View } from "react-native";
 
 const Payments = () => {
   return (
-    <View>
-      <Text>Payments</Text>
+    <View className="flex-1">
+      <Text className="text-blue-500">Payments</Text>
     </View>
   );
 };
