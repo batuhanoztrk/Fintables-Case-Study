@@ -1,0 +1,25 @@
+{
+  "translation": {
+    "subscriptions": {
+      "title": "Abonelik Geçmişi",
+      "welcome": "Merhaba, {{name}}!",
+      "content": "Bugün tüm aboneliklerinizi kontrol etmek için iyi bir gün.",
+      "activeSubscriptions": "Aktif Abonelikler",
+      "expiredSubscriptions": "Süresi Dolmuş Abonelikler",
+      "nextBilling": "Sonraki Fatura: {{date}}",
+      "willExpire": "Süresi Dolacak: {{date}}",
+      "expired": "Süresi Doldu: {{date}}",
+      "cancel": "İptal et",
+      "reactivate": "Yeniden Etkinleştir",
+      "renew": "Yeniden Abone Ol",
+      "giveFeedback": "Geri Bildirim Ver",
+      "giveUp": "Vazgeç",
+      "noActiveSubscriptions": "Aktif aboneliğiniz bulunmamaktadır.",
+      "noActiveSubscriptionsContent": "Yeni bir abonelik başlatmak için abonelikler sayfasına gidin."
+    },
+    "period": {
+      "monthly": "ay",
+      "yearly": "yıl"
+    }
+  }
+}

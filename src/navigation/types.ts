@@ -3,7 +3,7 @@ import { StackNavigationProp } from "@react-navigation/stack";
 
 export type RootStackParamList = {
   [Screens.Splash]: undefined;
-  [Screens.Payments]: undefined;
+  [Screens.Subscriptions]: undefined;
 };
 
 export type SplashScreenNavigationProp = StackNavigationProp<
@@ -11,7 +11,7 @@ export type SplashScreenNavigationProp = StackNavigationProp<
   Screens.Splash
 >;
 
-export type PaymentsScreenNavigationProp = StackNavigationProp<
+export type SubscriptionsScreenNavigationProp = StackNavigationProp<
   RootStackParamList,
-  Screens.Payments
+  Screens.Subscriptions
 >;

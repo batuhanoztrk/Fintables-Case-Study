@@ -1,0 +1,25 @@
+{
+  "translation": {
+    "subscriptions": {
+      "title": "History of Subscriptions",
+      "welcome": "Hi, {{name}}!",
+      "content": "Today is good day to check all your subscriptions.",
+      "activeSubscriptions": "Active Subscriptions",
+      "expiredSubscriptions": "Expired Subscriptions",
+      "nextBilling": "Next Billing: {{date}}",
+      "willExpire": "Will Expire: {{date}}",
+      "expired": "Expired: {{date}}",
+      "cancel": "Cancel",
+      "reactivate": "Reactivate",
+      "renew": "Renew",
+      "giveFeedback": "Give Feedback",
+      "giveUp": "Give Up",
+      "noActiveSubscriptions": "You don't have any active subscriptions.",
+      "noActiveSubscriptionsContent": "Go to subscriptions page to start a new subscription."
+    },
+    "period": {
+      "monthly": "mo",
+      "yearly": "yr"
+    }
+  }
+}
