@@ -5,6 +5,7 @@ import {
   Subscription,
   SubscriptionResponse,
 } from "@models/Subscription";
+import _ from "lodash";
 
 const emptySubscription: SubscriptionResponse = {
   subscriptions: [],
@@ -78,24 +79,17 @@ const threeActiveSubscriptions: SubscriptionResponse = {
   ],
 };
 
-export const getSubscriptions = async (
-  userId: number,
-): Promise<Subscription[]> => {
+const data = [
+  emptySubscription,
+  oneExpiredSubscription,
+  oneActiveOneExpiredSubscription,
+  threeActiveSubscriptions,
+];
+
+export const getSubscriptions = async (): Promise<Subscription[]> => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      switch (userId) {
-        case 1:
-          resolve(oneExpiredSubscription.subscriptions);
-          break;
-        case 2:
-          resolve(oneActiveOneExpiredSubscription.subscriptions);
-          break;
-        case 3:
-          resolve(threeActiveSubscriptions.subscriptions);
-          break;
-        default:
-          resolve(emptySubscription.subscriptions);
-      }
+      resolve(_.sample(data)!.subscriptions);
     }, 1000);
   });
 };

@@ -1,5 +1,4 @@
 import SubscriptionList from "@components/SubscriptionList";
-import { users } from "@constants/Users";
 import { Status } from "@models/Subscription";
 import { getSubscriptions } from "@services/subscriptions";
 import { useQuery } from "@tanstack/react-query";
@@ -10,13 +9,11 @@ import { Text, View } from "react-native";
 import { ScrollView } from "react-native-virtualized-view";
 
 const Subscriptions = () => {
-  const user = _.sample(users)!;
-
   const { t } = useTranslation();
 
   const { data, isLoading } = useQuery({
-    queryKey: ["subscriptions", user.id],
-    queryFn: () => getSubscriptions(user.id),
+    queryKey: ["subscriptions"],
+    queryFn: getSubscriptions,
   });
 
   const activeSubscriptions = useMemo(() => {
@@ -33,7 +30,7 @@ const Subscriptions = () => {
         <View className="gap-y-1">
           <Text className="text-black-primary text-3xl">
             {t("subscriptions.welcome", {
-              name: user.name,
+              name: "John Doe",
             })}
           </Text>
           <Text className="text-black-hint text-sm font-bold">
