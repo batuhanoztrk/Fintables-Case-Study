@@ -52,7 +52,7 @@ const Subscriptions = () => {
           />
         ) : null}
 
-        {expiredSubscriptions.length > 0 ? (
+        {isLoading || expiredSubscriptions.length > 0 ? (
           <SubscriptionList
             isLoading={isLoading}
             data={expiredSubscriptions}

@@ -1,5 +1,18 @@
 {
   "translation": {
-    "subscriptions": "Abonelikler"
+    "subscriptions": {
+      "title": "Abonelik Geçmişi",
+      "welcome": "Merhaba, {{name}}!",
+      "content": "Bugün tüm aboneliklerinizi kontrol etmek için iyi bir gün.",
+      "activeSubscriptions": "Aktif Abonelikler",
+      "expiredSubscriptions": "Süresi Dolmuş Abonelikler",
+      "nextBilling": "Sonraki Fatura: {{date}}",
+      "willExpire": "Süresi Dolacak: {{date}}",
+      "expired": "Süresi Doldu: {{date}}"
+    },
+    "period": {
+      "monthly": "ay",
+      "yearly": "yıl"
+    }
   }
 }

@@ -5,7 +5,14 @@
       "welcome": "Hi, {{name}}!",
       "content": "Today is good day to check all your subscriptions.",
       "activeSubscriptions": "Active Subscriptions",
-      "expiredSubscriptions": "Expired Subscriptions"
+      "expiredSubscriptions": "Expired Subscriptions",
+      "nextBilling": "Next Billing: {{date}}",
+      "willExpire": "Will Expire: {{date}}",
+      "expired": "Expired: {{date}}"
+    },
+    "period": {
+      "monthly": "mo",
+      "yearly": "yr"
     }
   }
 }

@@ -4,6 +4,7 @@ import { products } from "@constants/Products";
 import { Subscription } from "@models/Subscription";
 import { FlashList } from "@shopify/flash-list";
 import _ from "lodash";
+import { Skeleton } from "moti/skeleton";
 import React from "react";
 import { Text, View, ViewStyle } from "react-native";
 
@@ -22,7 +23,11 @@ const SubscriptionList = ({
 }: SubscriptionListProps) => {
   return (
     <View style={style} className="gap-y-4">
-      <Text className="text-black-primary text-xl font-bold">{title}</Text>
+      <View>
+        <Skeleton colorMode="light" show={isLoading}>
+          <Text className="text-black-primary text-xl font-bold">{title}</Text>
+        </Skeleton>
+      </View>
       <View>
         <FlashList
           estimatedItemSize={64}
